@@ -10,11 +10,11 @@ export default function Table() {
       <table className="text-left mt-4 w-full" style={{ borderCollapse: "collapse" }}>
         <thead>
           <tr>
-            <th className="py-4 px-6 bg-grey-lighter font-sans font-medium uppercase text-sm text-grey border-b border-grey-light">Item typr</th>
-            <th className="py-4 px-6 bg-grey-lighter font-sans font-medium uppercase text-sm text-grey border-b border-grey-light">Transaction Number</th>
-            <th className="py-4 px-6 bg-grey-lighter font-sans font-medium uppercase text-sm text-grey border-b border-grey-light">Price</th>
-            <th className="py-4 px-6 bg-grey-lighter font-sans font-medium uppercase text-sm text-grey border-b border-grey-light">Date</th>
-            <th className="py-4 px-6 bg-grey-lighter font-sans font-medium uppercase text-sm text-grey border-b border-grey-light">Status</th>
+            <th style={{background:"#EAEEF0"}} className="py-4 px-6 rounded font-sans font-medium text-sm text-grey border-b border-grey-light">Item typr</th>
+            <th style={{background:"#EAEEF0"}} className="py-4 px-6 rounded font-sans font-medium text-sm text-grey border-b border-grey-light">Transaction Number</th>
+            <th style={{background:"#EAEEF0"}} className="py-4 px-6 rounded font-sans font-medium text-sm text-grey border-b border-grey-light">Price</th>
+            <th style={{background:"#EAEEF0"}} className="py-4 px-6 rounded font-sans font-medium text-sm text-grey border-b border-grey-light">Date</th>
+            <th style={{background:"#EAEEF0"}} className="py-4 px-6 rounded font-sans font-medium text-sm text-grey border-b border-grey-light">Status</th>
 
           </tr>
         </thead>

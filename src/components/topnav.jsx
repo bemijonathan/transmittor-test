@@ -21,7 +21,7 @@ export const NavBar = () => {
 
   return (
     <>
-    <div  className={count ? '':'fixed top-0 w-full z-10'}>
+    <div  className={count ? '':'fixed top-0 w-full animate z-10'}>
       <nav className="bg-white p-3 flex w-100 justify-even shadow items-center"  >
         <h3 className="text-lg text-blue-400 header mr-20" > TransMittor </h3>
         <div className="flex-1 flex items-center">

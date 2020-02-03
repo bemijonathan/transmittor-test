@@ -18,6 +18,7 @@ nav {
 .sidebar {
     width: 260px;
     padding-top: 30px;
+    top: 80px;
     /* background: white; */
 }
 
@@ -104,6 +105,21 @@ canvas#large {
     }
 }
 
+.animate {
+    animation: show 2s normal;
+    /* animation-duration:; */
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .payment h2,
 .payment p {
     margin-top: 10px;
@@ -124,6 +140,19 @@ canvas#large {
     line-height: 16px;
 }
 
-.buttonHolder button{
+.buttonHolder button {
     background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
+}
+
+.payment-header {
+    font-family: Segoe UI;
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 40px !important;
+    margin-bottom: 22px !important;
+}
+
+.show{
+    width: 150px;
+    height: 33px;
 }

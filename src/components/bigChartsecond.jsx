@@ -31,7 +31,7 @@ export default class componentName extends Component {
                 responsive: true,
                 elements: {
                     point: {
-                        radius: 1
+                        radius: 0
                     }
                 },
                 maintainAspectRatio: false,

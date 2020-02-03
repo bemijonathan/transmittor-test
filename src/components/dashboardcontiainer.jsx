@@ -25,28 +25,28 @@ export default function DashBoardContainer() {
                     <option value="11-10">11 Nov - 10 Dec</option>
                     <option value="11-10">11 Jan - 10 Feb</option>
                   </select>
-              </div>
-              <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
-                {'<'}
-              </button>
-              <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
-                {'>'}
-              </button>
+                </div>
+                <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
+                  {'<'}
+                </button>
+                <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
+                  {'>'}
+                </button>
               </div>
             </div>
-            <div className="w-100" style={{ height: '340px' }}>
+            <div className="w-100" style={{ height: '300px' }}>
               <ChartComponent />
             </div>
           </div>
-                                
+
           <div className="flex-1 ml-1">
-            <Payments/>
+            <Payments />
           </div>
 
 
         </div>
-        <section> 
-          <PaymentSection/>
+        <section>
+          <PaymentSection />
         </section>
         <Table></Table>
       </div>

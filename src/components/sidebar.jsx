@@ -16,7 +16,7 @@ export default function SideBAr() {
   ])
   return (
     <>
-      <div className="sidebar fixed h-full">
+      <div className="sidebar fixed h-full overflow-scroll">
         <button className="px-5 text-white py-2">
           Generate invoice
         </button>
