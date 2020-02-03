@@ -1,7 +1,8 @@
 
-
 import { tsvParse, csvParse } from  "d3-dsv";
 import { timeParse } from "d3-time-format";
+
+import * as  data from  '../data/data.tsv';
 
 function parseData(parse) {
 	return function(d) {
@@ -19,8 +20,14 @@ function parseData(parse) {
 const parseDate = timeParse("%Y-%m-%d");
 
 export function getData() {
-	const promiseMSFT = fetch("https://cdn.rawgit.com/rrag/react-stockcharts/master/docs/data/MSFT.tsv")
-		.then(response => response.text())
-		.then(data => tsvParse(data, parseData(parseDate)))
-	return promiseMSFT;
+	// const promiseMSFT = fetch("../data/data.tsv")
+	// 	.then(response => response.text())
+		// .then
+		console.log(data)
+		debugger
+		data = tsvParse(data, parseData(parseDate))
+		console.log(data)
+		// debugger
+
+	return data;
 }

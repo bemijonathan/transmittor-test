@@ -24,34 +24,106 @@ nav {
 .sidebar button {
     background: #27AE60;
     border-radius: 30px;
-    margin-left:31px;
+    margin-left: 31px;
 }
 
 .sidebar .route {
-    padding:10px 10px 10px 41px ;
+    padding: 10px 10px 10px 41px;
     margin-bottom: 15px;
     font-family: Segoe UI;
 }
 
-.sidebar .active{
+.sidebar .active {
     border-left: 4px solid #1875F0;
     background: rgba(24, 118, 240, 0.151);
 }
 
-.sidebar div{
+.sidebar div {
     font-size: 11px;
     line-height: 15px;
 }
 
-.sidebar .Text{
+.sidebar .Text {
     padding-left: 42px;
-    margin-top:35px;
+    margin-top: 35px;
     margin-bottom: 15px;
 }
 
-.dashboard{
-    background:#E5E5E5 ;
+.dashboard {
+    background: #E5E5E5;
     width: 100%;
-    padding:30px 33px;
+    padding: 30px 80px 30px 30px;
     height: '';
+}
+
+.chart-container-title {
+    font-family: Segoe UI;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.chart-container-value {
+    font-family: Segoe UI;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+canvas#large {
+    background-color: #fff;
+}
+
+
+.progress {
+    background: green;
+    border-radius: 200px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 7px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-value {
+    background: yellow;
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    height: 7px;
+    width: 0;
+    margin-left: -13px;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 68%;
+    }
+}
+
+.payment h2,
+.payment p {
+    margin-top: 10px;
+}
+
+.date {
+    font-family: Segoe UI;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.selectdate {
+    width: 138px;
+    height: 31px;
+    border: 1px solid #DDE0E3;
+    font-family: Segoe UI;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.buttonHolder button{
+    background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
 }
