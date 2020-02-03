@@ -152,7 +152,14 @@ canvas#large {
     margin-bottom: 22px !important;
 }
 
-.show{
+.show {
     width: 150px;
     height: 33px;
+}
+
+.ball {
+    width: 9px;
+    height: 9px;
+    border-radius: 4.5px;
+    background: #EBC315;
 }
