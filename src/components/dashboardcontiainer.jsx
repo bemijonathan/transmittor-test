@@ -14,7 +14,7 @@ export default function DashBoardContainer() {
           <SmallCharts />
         </div>
         <div className=" flex  mt-4">
-          <div className="bg-white pt-3 w-2/3 rounded-lg overflow-hidden">
+          <div className="bg-white pt-3 w-2/3 shadow rounded overflow-hidden">
             <div className="flex justify-between items-center p-4 buttonHolder">
               <div className="date">
                 Today 5, Aug 2019
@@ -26,24 +26,22 @@ export default function DashBoardContainer() {
                     <option value="11-10">11 Jan - 10 Feb</option>
                   </select>
                 </div>
-                <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
+                <button className="border border-gray-500 px-2 rounded ml-3  bg-gray-500">
                   {'<'}
                 </button>
-                <button className="border border-gray-500 px-2 rounded ml-3 py-1 bg-gray-500">
+                <button className="border border-gray-500 px-2 rounded ml-3  bg-gray-500">
                   {'>'}
                 </button>
               </div>
             </div>
-            <div className="w-100" style={{ height: '300px' }}>
+            <div className="w-100 pb-1 -m-1 " style={{ height: '300px'}}>
               <ChartComponent />
             </div>
           </div>
 
-          <div className="flex-1 ml-1">
+          <div className="flex-1 ml-1 chart-component">
             <Payments />
           </div>
-
-
         </div>
         <section>
           <PaymentSection />

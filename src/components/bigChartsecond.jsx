@@ -44,7 +44,9 @@ export default class componentName extends Component {
                         position: 'top',
                         ticks: {
                             beginAtZero: true,
-                            fontSize: 15,
+                            fontSize: 14,
+                            fontColor:"black",
+                            // fontStyle
                             padding: 20
 
 

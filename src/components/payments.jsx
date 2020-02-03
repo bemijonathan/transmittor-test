@@ -21,7 +21,7 @@ export default function Payments() {
             {
                 Orders.map((e, i) => {
                     return (
-                        <div key={i} className=" bg-white mb-1 payment rounded-lg px-3" style={{height:"49%", display:'grid', alignContent:"center"}}>
+                        <div key={i} className=" bg-white payment rounded shadow px-5" style={{height:"100%", display:'grid', alignContent:"center", fontSize:"14px", fontFamily:"Segoe UI"}}>
                             <h2 className="mb-2"><b>{e.title}</b></h2>
                             <div className="progressbars">
                                 <div className="progress">
@@ -29,13 +29,13 @@ export default function Payments() {
                                 </div>
                             </div>
                             <p>
-                                Pending {e.title === 'Orders' ? 'Orders' : 'Payments'} : {e.pending}
+                                Pending {e.title === 'Orders' ? 'Orders' : 'Payments'} : <span className="text-yellow-700 font-black"> <b>{e.pending} </b> </span> 
                             </p>
                             <p>
-                                Reconciled {e.title === 'Orders' ? 'Orders' : 'Payments'} : {e.reconciled}
+                                Reconciled {e.title === 'Orders' ? 'Orders' : 'Payments'} : <span className="text-green-700 font-black"> <b> {e.reconciled  } </b></span>
                             </p>
                             <p>
-                                Total {e.title === 'Orders' ? 'Orders' : 'Payments'} : {e.Total}
+                                Total {e.title === 'Orders' ? 'Orders' : 'Payments'} : <span className="text-blue-700 font-black"> <b> {e.Total}  </b> </span> 
                             </p>
                         </div>
                     )

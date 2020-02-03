@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("/font/Segoe_UI.ttf") format("truetype")
+  }
+
+  .chart-component{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 6px;
+  }
+tr{
+    color:#647787;
+}
 .header {
     font-family: Roboto;
     font-style: normal;
@@ -16,7 +29,7 @@ nav {
 }
 
 .sidebar {
-    width: 260px;
+    min-width: 260px;
     padding-top: 30px;
     top: 80px;
     /* background: white; */
@@ -71,11 +84,13 @@ nav {
 
 canvas#large {
     background-color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 
 .progress {
-    background: green;
+    background: #FDC203;
     border-radius: 200px;
     padding: 0;
     margin: 0;
@@ -86,7 +101,7 @@ canvas#large {
 }
 
 .progress-value {
-    background: yellow;
+    background: #27AE60;
     animation: load 3s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
@@ -101,7 +116,7 @@ canvas#large {
     }
 
     100% {
-        width: 68%;
+        width: 75%;
     }
 }
 
